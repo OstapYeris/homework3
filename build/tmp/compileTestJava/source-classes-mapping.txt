@@ -1,0 +1,16 @@
+seleniumIntro/SeleniumIntro.java
+ seleniumIntro.SeleniumIntro
+testsWithPOM/PomTestsChaining.java
+ testsWithPOM.PomTestsChaining
+testsWithPOM/homeworkTests.java
+ testsWithPOM.homeworkTests
+setUpClasses/BaseSelenideClass.java
+ setUpClasses.BaseSelenideClass
+testsWithPOM/PomWithPageFactoryTests.java
+ testsWithPOM.PomWithPageFactoryTests
+testsWithPOM/PomTests.java
+ testsWithPOM.PomTests
+setUpClasses/BaseWebDriver.java
+ setUpClasses.BaseWebDriver
+SelenideIntro/SelenideIntro.java
+ SelenideIntro.SelenideIntro

@@ -108,10 +108,10 @@ public class DemoPage {
         driver.findElement(confirmPasswordFild).sendKeys(Password);
     }
 
-//    public void checkSuccesfullRegistrationMessage () {
-//        new WebDriverWait(driver, 5).until(ExpectedConditions.presenceOfElementLocated(successfullRegistrationMessage));
-//        driver.findElement(successfullRegistrationMessage).getText();
-//    }
+    public String checkSuccesfullRegistrationMessage () {
+        new WebDriverWait(driver, 5).until(ExpectedConditions.presenceOfElementLocated(successfullRegistrationMessage));
+        return driver.findElement(successfullRegistrationMessage).getText();
+    }
 //
 //    public void CheckLoginWithWrongCredentialsMessage () {
 //        new WebDriverWait(driver, 5).until(ExpectedConditions.presenceOfElementLocated(wrongLoginMessage));

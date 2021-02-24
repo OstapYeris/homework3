@@ -12,7 +12,7 @@ import setUpClasses.BaseWebDriver;
 public class homeworkTests extends BaseWebDriver {
 
     @Test
-    public void testWithWrongCredentials(){
+    public void testWithWrongCredentials() {
         driver.get("http://demo.guru99.com/test/newtours/");
         DemoPage demoPage = new DemoPage(driver);
         demoPage.setLogin("WrongLogin");
@@ -43,13 +43,14 @@ public class homeworkTests extends BaseWebDriver {
         demoPage.setPassword("12345678");
         demoPage.confirmPasswordFild("12345678");
         demoPage.clickSubmitButton();
-//        message = demoPage.checkSuccesfullRegistrationMessage();
+        String message = demoPage.checkSuccesfullRegistrationMessage();
+        Assert.assertEquals(message, "Thank you for registering. You may now sign-in using the user name and password you've just entered.");
 //        Assert.assertEquals(demoPage.checkSuccesfullRegistrationMessage(), "Thank you for registering. You may now sign-in using the user name and password you've just entered.");
-        WebElement registrationMessage = new WebDriverWait(driver, 4)
-                .until((ExpectedConditions.visibilityOfElementLocated(By
-                        .cssSelector("html>body>div:nth-of-type(2)>table>tbody>tr>td:nth-of-type(2)>table>tbody>tr:nth-of-type(4)>td>table>tbody>tr>td:nth-of-type(2)>table>tbody>tr:nth-of-type(3)>td>p:nth-of-type(2)>font"))));
-        Assert.assertEquals(registrationMessage
-                .getText(), "Thank you for registering. You may now sign-in using the user name and password you've just entered.");
+//        WebElement registrationMessage = new WebDriverWait(driver, 4)
+//                .until((ExpectedConditions.visibilityOfElementLocated(By
+//                        .cssSelector("html>body>div:nth-of-type(2)>table>tbody>tr>td:nth-of-type(2)>table>tbody>tr:nth-of-type(4)>td>table>tbody>tr>td:nth-of-type(2)>table>tbody>tr:nth-of-type(3)>td>p:nth-of-type(2)>font"))));
+//        Assert.assertEquals(registrationMessage
+//                .getText(), "Thank you for registering. You may now sign-in using the user name and password you've just entered.");
         demoPage.clickSignOffButton();
     }
 

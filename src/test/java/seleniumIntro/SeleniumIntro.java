@@ -14,7 +14,7 @@ public class SeleniumIntro {
 
     @BeforeClass
     public void setUp() {
-        System.setProperty("webdriver.chrome.driver", "C:/Webdrivers/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "/home/ostap/Documents/logos/AQA course/webDriver/chromedriver");
         driver = new ChromeDriver();
     }
 
