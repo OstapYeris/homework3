@@ -1,10 +1,6 @@
 package SelenideIntro;
 
-import org.openqa.selenium.By;
-import com.codeborne.selenide.ElementsCollection;
-import org.testng.Assert;
 import org.testng.annotations.Test;
-import setUpClasses.BaseSelenideClass;
 import setUpClasses.HomeworkBaseSelenideClass;
 import pages.DemoPageSelenide;
 import static com.codeborne.selenide.Selenide.*;
